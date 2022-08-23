@@ -1,0 +1,28 @@
+server:
+  port: 9090
+  servlet:
+    context-path: "/salary"
+spring:
+  devtools:
+    add-properties: true
+    restart:
+      enabled: true
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: ola24oluwa
+    url: jdbc:mysql://localhost:3306/salarydb
+  jpa:
+    hibernate:
+      ddl-auto: create
+
+    properties:
+      hibernate:
+        format_sql: true
+        show_sql: true
+        dialect: org.hibernate.dialect.MySQL8Dialect
+logging:
+  level:
+    org:
+      org:
+        springframework: debug
