@@ -13,7 +13,7 @@ import java.util.List;
 public class EmployeeRoute {
     private final EmployeeService employeeService;
     @PostMapping("/add")
-    public Employee addEmployee(Employee payload){
+    public Employee addEmployee(@RequestBody Employee payload){
         return employeeService.addEmployee(payload);
     }
 
@@ -22,7 +22,7 @@ public class EmployeeRoute {
          employeeService.deleteEmployee(id);
     }
     @GetMapping("/fetch")
-    public List<Employee> addEmployee(){
+    public List<Employee> fetchEmployee(){
         return employeeService.listEmployee();
     }
 }
