@@ -40,4 +40,9 @@ public class SalaryServiceImpl implements SalaryService {
         }
 
     }
+
+    @Override
+    public Salary addSalary(Salary salary) {
+        return salaryRepository.save(salary);
+    }
 }

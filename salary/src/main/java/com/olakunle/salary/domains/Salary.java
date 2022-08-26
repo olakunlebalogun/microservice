@@ -15,7 +15,7 @@ import java.math.BigInteger;
 @Table(name = "salary")
 public class Salary implements Serializable {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
     @Column(unique = true, name = "staff_code", nullable = false)
     private String staffCode;

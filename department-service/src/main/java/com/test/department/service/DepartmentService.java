@@ -21,8 +21,8 @@ public class DepartmentService {
         return departmentRepository.save(department);
     }
 
-    public Department findDepartmentById(Long departmentId) {
-        return departmentRepository.findByDepartmentId(departmentId);
+    public Department findByDepartmentId(Long departmentId) {
+        return departmentRepository.findDepartmentByDepartmentId(departmentId);
     }
 
     public List<Department> fetchDepartment() {

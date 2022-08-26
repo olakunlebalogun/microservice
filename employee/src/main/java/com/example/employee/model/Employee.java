@@ -26,4 +26,7 @@ public class Employee {
     @Column(name = "age")
     private Integer age;
 
+    private Long departmentId;
+
+
 }

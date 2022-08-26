@@ -1,4 +1,4 @@
-package com.olakunle.salary.dto;
+package com.example.employee.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -10,7 +10,8 @@ import java.math.BigInteger;
 @AllArgsConstructor
 @NoArgsConstructor
 public class SalaryResponse {
-    private String staffName;
-    private String paymentDate;
-    private BigInteger amount;
+
+private String staffName;
+private String paymentDate;
+private BigInteger amount;
 }
