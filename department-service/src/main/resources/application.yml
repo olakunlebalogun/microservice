@@ -1,2 +1,15 @@
 server:
   port: 9001
+
+  spring:
+    application:
+      name: DEPARTMENT-SERVICE
+
+  eureka:
+    client:
+      register-with-eureka: false
+      fetch-registry: false
+      service-url:
+        default-zone: http://localhost:8700/eureka/
+        instance:
+          hostname: localhost

@@ -1,0 +1,16 @@
+
+server:
+  port: 7474
+
+  spring:
+    application:
+      name: EMPLOYEE-SERVICE
+
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      default-zone: http://localhost:8700/eureka/
+      instance:
+        hostname: localhost
